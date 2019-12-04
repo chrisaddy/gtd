@@ -5,6 +5,7 @@ mod help;
 mod init;
 mod capture;
 mod inbox;
+mod list;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -27,6 +28,8 @@ fn main() {
         "help" => println!("{}", help::MESSAGE),
         "init" => init::setup(),
         "capture" => capture::input(),
+        "projects" => println!("Coming soon!"),
+        "contexts" => println!("Coming soon!"),
         _ => println!("{} {} {}\n\n{}", "command".red().bold(), &command.green(), "not recognized".red().bold(), help::MESSAGE)
     }
 }

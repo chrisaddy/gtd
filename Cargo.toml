@@ -1,6 +1,6 @@
 [package]
 name = "gtd"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["chrisaddy <chris.william.addy@gmail.com>"]
 edition = "2018"
 
@@ -11,3 +11,5 @@ dirs = "2.0"
 colored = "1.9"
 uuid = { version = "0.8", features = ["serde", "v4"] }
 chrono = "*"
+csv = "1.1"
+serde = { version = "1.0", features = ["derive"] }

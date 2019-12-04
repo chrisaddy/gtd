@@ -19,7 +19,10 @@ pub fn setup() {
     )
     .expect("Failed to create config file");
 
-    fs::write(format!("{}/.gtd/inbox", home_dir), "")
+    fs::write(
+        format!("{}/.gtd/inbox", home_dir),
+        "captureId,timestamp,text\n"
+        )
         .expect("Failed to create inbox");
 
     println!("{}", "GTD Initialized".green())
